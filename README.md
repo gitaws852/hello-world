@@ -4,4 +4,4 @@ New text being added.
 
 Hello World
 
-![Build Status](https://github.com/<OWNER>/<REPOSITORY>/workflows/<WORKFLOW_NAME>/badge.svg)
+![Build Status](https://github.com/gitaws852/hello-world/workflows/pythonapp.yml/badge.svg)
