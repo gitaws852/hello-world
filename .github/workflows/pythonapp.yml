@@ -13,6 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: hello world action
+      with: 
+        otl_client: ${{ secrets.CLIENT_ID }}
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
