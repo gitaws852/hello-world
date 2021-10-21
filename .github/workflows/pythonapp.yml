@@ -16,6 +16,8 @@ jobs:
     - name: hello world action
       env: 
         otl_client: ${{ secrets.CLIENT_ID }}
+      run: |
+        nbdev_test_nbs
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
