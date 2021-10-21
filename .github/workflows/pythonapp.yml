@@ -14,10 +14,10 @@ jobs:
 
     steps:
     - name: clientID actions
-      with: 
-        CLIENT_ID: ${{ secrets.CLIENT_ID }}
       env:
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
+      run: | 
+        echo "This is the clientID"
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
