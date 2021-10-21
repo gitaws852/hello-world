@@ -10,10 +10,15 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
 
     steps:
     - uses: actions/checkout@v2
+    - name: test key
+      env: 
+        client_id: ${{ secrets.CLIENT_ID }}
+      run:
+        echo "this is the key"
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
@@ -24,7 +29,10 @@ jobs:
     - name: Install requests
       run: |
         pip install requests
+        brew update
+        brew install allure
     - name: Test with pytest
       run: |
         pip install pytest
-        pytest
+        pytest --alluredir=/tmp/my_allure_results
+        allure serve /tmp/my_allure_results
