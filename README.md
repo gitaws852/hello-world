@@ -8,5 +8,4 @@ Hello World
 
 A simple commit to test automation
 
-TESTing
-latest
+TEST
