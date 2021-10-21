@@ -14,10 +14,10 @@ jobs:
 
     steps:
     - name: hello world action
+      with: 
+        super_secret: ${{ secrets.CLIENT_ID }}
       env: 
         otl_client: ${{ secrets.CLIENT_ID }}
-      run: |
-        nbdev_test_nbs
     - uses: actions/checkout@v2
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
