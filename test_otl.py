@@ -1,6 +1,7 @@
 import pytest
 import json
 import otl_cases
+import os
 
 clientId = os.environ['client_id']
 headers = {}
