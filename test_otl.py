@@ -1,8 +1,9 @@
 import pytest
 import json
 import otl_cases
+import os
 
-os.environ['client_id']
+clientId = os.environ['client_id']
 headers = {}
 
 # otl sandbox auth intiate call - gives success response
