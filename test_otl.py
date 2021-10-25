@@ -3,7 +3,7 @@ import json
 import otl_cases
 import os
 
-clientId = os.environ['CLIENT_ID']
+clientId = "babab5b5-404c-4180-8e49-a24b0c924f3c"
 headers = {}
 
 # otl sandbox auth intiate call - gives success response
