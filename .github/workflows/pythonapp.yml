@@ -8,15 +8,15 @@ on: [workflow_dispatch]
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: clientID actions
-      env:
+    - name: test key
+      env: 
         CLIENT_ID: ${{ secrets.CLIENT_ID }}
-      run: | 
-        echo "This is the clientID"
+      run:
+        echo "this is the key"
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
