@@ -12,11 +12,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: test key
-      env: 
-        CLIENT_ID: ${{ secrets.CLIENT_ID }}
-      run:
-        echo "this is the key"
     - name: Set up Python 3.9
       uses: actions/setup-python@v2
       with:
